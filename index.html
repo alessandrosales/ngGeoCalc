@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Alessandro Sales</title>
+
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<html ng-app="ngGeoCalc">
+  <head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+  </head>
+  <body ng-controller="GeoController">
+    <h1>Calculando distância entre o seu local e o local parametrizado</h1>
+    <div id="container">
+      <p>
+        <input type="text" ng-model="latitude">
+      </p>
+      <p>
+        <input type="text" ng-model="longitude">
+      </p>
+      <button ng-click="atualiza()">Click</button><br><br><b><span ng-bind="distancia"></span></b>
+    </div>
+  </body>
+</html>
+
+  <script src="js/ngGeoCalc.js"></script>
+
+</body>
+
+</html>
